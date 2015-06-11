@@ -19,7 +19,7 @@ ENV NETDISCO_HOME "/netdisco"
 RUN mkdir $NETDISCO_HOME
 WORKDIR $NETDISCO_HOME
 
-RUN curl -L http://cpanmin.us/ | perl - --notest --local-lib $NETDISCO_HOME/perl5 App::Netdisco
+RUN curl -k -L http://cpanmin.us/ | perl - --notest --local-lib $NETDISCO_HOME/perl5 App::Netdisco
 ENV PATH $NETDISCO_HOME/perl5/bin:$PATH
 
 ADD netdisco-entry.sh /
