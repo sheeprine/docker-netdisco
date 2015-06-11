@@ -60,6 +60,6 @@ y
 y
 EOF
 
-netdisco-web start &
+netdisco-web start
 netdisco-daemon start
-tail -f $NETDISCO_HOME/logs/netdisco-daemon.log
+tail -f $NETDISCO_HOME/logs/netdisco-*.log
