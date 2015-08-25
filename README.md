@@ -8,4 +8,4 @@ Start a postgres database:
 
 Link it to netdisco:
 
-`docker run -d --name=netdisco -e NETDISCO_WR_COMMUNITY="private" --link pg-netdisco:db sheeprine/netdisco`
+`docker run -d --name=netdisco -e NETDISCO_WR_COMMUNITY="private" --link pg-netdisco:db sheeprine/docker-netdisco`
