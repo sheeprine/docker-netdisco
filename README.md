@@ -10,4 +10,4 @@ Link it to netdisco:
 
 `docker run -d --name=netdisco -e NETDISCO_WR_COMMUNITY="private" --link pg-netdisco:db -p 5000:5000 sheeprine/docker-netdisco`
 
-Connect using your browser to http://<IP-of-docker-host>:5000/
+Connect using your browser to http://IP-of-docker-host:5000/ with a username "admin" and a password of "password"
